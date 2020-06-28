@@ -17,6 +17,8 @@ public class TheBestScenicSpot {
         System.out.println("粗暴解决方案： "+wildlyProcess(arrays));
         System.out.println("优雅解决方案： "+fairilyProcess(arrays));
 
+
+
     }
 
     /**
