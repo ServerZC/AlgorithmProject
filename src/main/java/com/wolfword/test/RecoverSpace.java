@@ -25,14 +25,23 @@ import java.util.*;
  */
 public class RecoverSpace {
     public static void main(String[] args) {
-        //String[] dictionary = {"frrrbbrrbfrfqqbbbrb","qr","b","rf","qqbbbbfrqbrrqrffbrqqqbqqfqfrr","r","ffqq","bffbqfqqbrrrf","fq","qfr","fr","rqrrbfbfq","r","f","qbqbrbrbqfqbbbfbbbfbq","bqqbbbqrbbrf","f"};
-        //String sentence = "bqqffbqbbfqrfrrrbbrrbfrfqqbbbrbfqfffffrfqfqfffffrrfqfrrqbqfrbfrqqrfrbrbbqbqbqqfqrfbfrfr";
-        String[] dictionary = {"jxnonurhhuanyuqahjy","phrxu","hjunypnyhajaaqhxduu"};
-        String sentence = "qahurhoharrdjxnonurhhuanyuqahjyppnha";
+        String[] dictionary = {"frrrbbrrbfrfqqbbbrb","qr","b","rf","qqbbbbfrqbrrqrffbrqqqbqqfqfrr","r","ffqq","bffbqfqqbrrrf","fq","qfr","fr","rqrrbfbfq","r","f","qbqbrbrbqfqbbbfbbbfbq","bqqbbbqrbbrf","f"};
+        String sentence = "bqqffbqbbfqrfrrrbbrrbfrfqqbbbrbfqfffffrfqfqfffffrrfqfrrqbqfrbfrqqrfrbrbbqbqbqqfqrfbfrfr";
+        //String[] dictionary = {"jxnonurhhuanyuqahjy","phrxu","hjunypnyhajaaqhxduu"};
+        //String sentence = "qahurhoharrdjxnonurhhuanyuqahjyppnha";
 
+        long start = System.currentTimeMillis();
         System.out.println(countUnknowChar(dictionary,sentence));
+        long end = System.currentTimeMillis();
+        System.out.println("耗时："+(end-start));
+        start = end;
         System.out.println(withBucket(dictionary,sentence));
+        end = System.currentTimeMillis();
+        System.out.println("耗时："+(end-start));
+        start = end;
         System.out.println(dynamicPlan(dictionary,sentence));
+        end = System.currentTimeMillis();
+        System.out.println("耗时："+(end-start));
     }
 
     /**
