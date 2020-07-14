@@ -1,4 +1,4 @@
-package com.wolfword.test;
+package cn.wolfshadow.test.leetcode;
 
 /**
  * 题目：面试题——模式匹配

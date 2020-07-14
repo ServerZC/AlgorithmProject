@@ -1,4 +1,4 @@
-package com.wolfword.test;
+package cn.wolfshadow.test.leetcode;
 
 /**
  * 题目： 最佳买卖股票时机含冷冻期

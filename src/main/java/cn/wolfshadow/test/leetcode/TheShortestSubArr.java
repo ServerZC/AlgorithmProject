@@ -1,4 +1,4 @@
-package com.wolfword.test;
+package cn.wolfshadow.test.leetcode;
 
 /**
  * 题目：长度最小的子数组

@@ -1,4 +1,4 @@
-package com.wolfword.test;
+package cn.wolfshadow.test.leetcode;
 
 /**
  * 9、题目： 消灭星星

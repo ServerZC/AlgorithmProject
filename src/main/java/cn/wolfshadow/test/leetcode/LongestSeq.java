@@ -1,4 +1,4 @@
-package com.wolfword.test;
+package cn.wolfshadow.test.leetcode;
 
 import java.util.Arrays;
 import java.util.HashMap;
