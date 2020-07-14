@@ -9,7 +9,7 @@ public class TestMain {
         long start = System.currentTimeMillis();
 
 
-        Testable testable = new MinPathSum();
+        Testable testable = new ArrayCreator();
         testable.test();
 
 

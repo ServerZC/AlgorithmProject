@@ -1,4 +1,4 @@
-package com.wolfword.sort;
+package cn.wolfshadow.sort;
 
 import java.util.Arrays;
 import java.util.Random;
