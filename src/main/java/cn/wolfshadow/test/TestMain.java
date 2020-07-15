@@ -1,15 +1,17 @@
 package cn.wolfshadow.test;
 
-import cn.wolfshadow.test.leetcode.MinPathSum;
-import cn.wolfshadow.test.others.ArrayCreator;
+import cn.wolfshadow.test.leetcode.*;
+import cn.wolfshadow.test.others.*;
 
 public class TestMain {
 
     public static void main(String[] args) {
         long start = System.currentTimeMillis();
 
+        String className = "CountTrees.class";
 
-        Testable testable = new ArrayCreator();
+        Testable testable = new CountTrees();
+//        Testable testable = getTestable4Name(className);
         testable.test();
 
 
@@ -17,5 +19,19 @@ public class TestMain {
         System.out.println("耗时： "+(end-start) +" ms");
 
 
+    }
+
+    public static Testable getTestable4Name(String className){
+        try {
+            Class aClass = Class.forName(className);
+            return  (Testable)aClass.newInstance();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (InstantiationException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        }
+        return  null;
     }
 }
