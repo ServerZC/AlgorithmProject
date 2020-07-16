@@ -8,9 +8,9 @@ public class TestMain {
     public static void main(String[] args) {
         long start = System.currentTimeMillis();
 
-        String className = "CountTrees.class";
+        //String className = "Bipartite.class";
 
-        Testable testable = new CountTrees();
+        Testable testable = new Bipartite();
 //        Testable testable = getTestable4Name(className);
         testable.test();
 
