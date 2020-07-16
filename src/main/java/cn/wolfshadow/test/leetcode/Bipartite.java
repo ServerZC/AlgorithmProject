@@ -149,11 +149,6 @@ public class Bipartite implements Testable {
                 setA.add(i);
                 stack.push(i);
                 counter ++;
-                /*for(int x : nodes){
-                    setB.add(x);
-                    stack.push(x);
-                    counter ++;
-                }*/
                 //2、找到一个有边节点后，由此开始进行深度优先遍历，直到栈为空；如果此时还没有遍历完成所有节点，则继续寻找未标记过的有边节点
                 while (!stack.isEmpty()){
                     Integer index = stack.pop();
