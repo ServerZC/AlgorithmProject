@@ -180,7 +180,7 @@ public class Bipartite implements Testable {
             }
             if (counter == n) break;
         }
-
+ 
         return true;
     }
 }
