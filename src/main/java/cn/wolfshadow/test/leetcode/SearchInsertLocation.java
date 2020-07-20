@@ -73,6 +73,14 @@ public class SearchInsertLocation implements Testable {
         else return start-1;
     }
 
+    /**
+     * 二分迭代
+     * @param arrays
+     * @param target
+     * @param start
+     * @param end
+     * @return
+     */
     public int withRecurse(int[] arrays,int target, int start ,int end){
         if (arrays == null || arrays.length == 0) return 0;
         if (target <= arrays[start]) return start;

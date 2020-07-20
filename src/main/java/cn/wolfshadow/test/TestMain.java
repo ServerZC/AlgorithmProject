@@ -12,7 +12,7 @@ public class TestMain {
 
         //String className = "Bipartite.class";
 
-        Testable testable = new SearchInsertLocation();
+        Testable testable = new SumToTarget();
 //        Testable testable = getTestable4Name(className);
         testable.test();
 
