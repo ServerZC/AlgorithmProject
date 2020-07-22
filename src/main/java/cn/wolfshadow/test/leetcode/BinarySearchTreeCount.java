@@ -19,7 +19,7 @@ import cn.wolfshadow.test.Testable;
  *     /     /       \                 \
  *    2     1         2                 3
  */
-public class CountTrees implements Testable {
+public class BinarySearchTreeCount implements Testable {
 
 
     @Override

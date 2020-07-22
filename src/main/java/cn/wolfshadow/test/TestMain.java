@@ -12,8 +12,7 @@ public class TestMain {
 
         //String className = "Bipartite.class";
 
-        Testable testable = new SumToTarget();
-//        Testable testable = getTestable4Name(className);
+        Testable testable = new BinarySearchTreeGenerate();
         testable.test();
 
         long end = System.currentTimeMillis();

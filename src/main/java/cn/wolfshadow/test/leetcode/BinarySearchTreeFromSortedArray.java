@@ -1,6 +1,8 @@
 package cn.wolfshadow.test.leetcode;
 
 
+import cn.wolfshadow.test.TreeNode;
+
 import java.util.Arrays;
 
 /**
@@ -17,7 +19,7 @@ import java.util.Arrays;
  *    /   /
  *  -10  5
  */
-public class SortedArrayToBST {
+public class BinarySearchTreeFromSortedArray {
 
     public static void main(String[] args) {
         int[] arrays = {-10,-3,0,5,9};
@@ -44,12 +46,4 @@ public class SortedArrayToBST {
 
 }
 
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
 
-    TreeNode(int x) {
-        val = x;
-    }
-}
