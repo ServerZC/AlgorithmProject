@@ -3,6 +3,7 @@ package cn.wolfshadow.test;
 import cn.wolfshadow.test.leetcode.*;
 import cn.wolfshadow.test.others.*;
 
+import java.io.BufferedInputStream;
 import java.util.ArrayList;
 
 public class TestMain {
@@ -12,7 +13,7 @@ public class TestMain {
 
         //String className = "Bipartite.class";
 
-        Testable testable = new MinInArray();
+        Testable testable = new MinPathSum2();
         testable.test();
 
         long end = System.currentTimeMillis();
