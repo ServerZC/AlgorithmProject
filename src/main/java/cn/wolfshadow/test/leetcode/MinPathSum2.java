@@ -23,7 +23,7 @@ public class MinPathSum2 implements Testable {
     @Override
     public void test() {
         int[][] grid = {{1,3,1},{1,5,1},{4,2,1}};
-        System.out.println(fastSearch(grid));
+        System.out.println(withDp(grid));
     }
 
     private int minPath(int[][] grid) {
@@ -72,7 +72,7 @@ public class MinPathSum2 implements Testable {
      * @param grid
      * @return
      */
-    private int fastSearch(int[][] grid){
+    private int withDp(int[][] grid){
         if(grid == null) return 0;
         int m = grid.length;
         if (m < 1) return 0;
