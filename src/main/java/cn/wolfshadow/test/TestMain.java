@@ -13,7 +13,7 @@ public class TestMain {
 
         //String className = "Bipartite.class";
 
-        Testable testable = new MinPathSum2();
+        Testable testable = new SubSequence();
         testable.test();
 
         long end = System.currentTimeMillis();
