@@ -68,7 +68,7 @@ public class MaxDepth implements Testable {
         if (node == null) return 0;
         Queue<TreeNode> queue = new LinkedList<>();
         node.val = 1;//设置第一个节点值为1
-        queue.add(node);
+        queue.offer(node);
         int max = 0;
         while (!queue.isEmpty()){
             TreeNode poll = queue.poll();
@@ -76,12 +76,12 @@ public class MaxDepth implements Testable {
             TreeNode left = poll.left;
             if (left!=null){
                 left.val = poll.val+1;
-                queue.add(left);
+                queue.offer(left);
             }
             TreeNode right = poll.right;
             if (right!=null){
                 right.val = poll.val+1;
-                queue.add(right);
+                queue.offer(right);
             }
         }
         return max;
