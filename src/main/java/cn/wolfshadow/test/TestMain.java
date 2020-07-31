@@ -13,7 +13,7 @@ public class TestMain {
 
         //String className = "Bipartite.class";
 
-        Testable testable = new MaxDepth();
+        Testable testable = new MagicIndex();
         testable.test();
 
         long end = System.currentTimeMillis();
